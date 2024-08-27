@@ -44,7 +44,7 @@ resource "aws_route_table" "public" {
 
 
   route {
-    cidr_block = "0.0.0.0/0"
+    cidr_block = var.allow_all_cidr_block
     gateway_id = aws_internet_gateway.gw.id
   }
 

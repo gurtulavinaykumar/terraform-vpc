@@ -20,3 +20,6 @@ variable "private_subnet_cidr_blocks" {
 variable "private_subnet_availability_zones" {
   type = list(string)
 }
+variable "allow_all_cidr_block" {
+  type = string
+}

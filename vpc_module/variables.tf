@@ -27,3 +27,8 @@ variable "private_subnet_availability_zones" {
   type        = list(string)
   description = "List of availability zones for private subnets"
 }
+
+variable "allow_all_cidr_block" {
+  type        = string
+  description = "CIDR block for allowing all traffic"
+}

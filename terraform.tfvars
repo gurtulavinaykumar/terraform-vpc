@@ -21,3 +21,5 @@ private_subnet_availability_zones = [
   "us-east-1b",
   "us-east-1c"
 ]
+
+allow_all_cidr_block = "0.0.0.0/0"

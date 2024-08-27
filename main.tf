@@ -1,5 +1,4 @@
 provider "aws" {
-  region = "us-east-1"
 }
 
 module "vpc" {
@@ -11,4 +10,5 @@ module "vpc" {
   public_subnet_availability_zones  = var.public_subnet_availability_zones
   private_subnet_cidr_blocks        = var.private_subnet_cidr_blocks
   private_subnet_availability_zones = var.private_subnet_availability_zones
+  allow_all_cidr_block              = var.allow_all_cidr_block
 }
